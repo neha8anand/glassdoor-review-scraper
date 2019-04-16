@@ -22,6 +22,7 @@ Overall rating
 '''
 
 import time
+import numpy as np
 import pandas as pd
 from argparse import ArgumentParser
 import argparse
@@ -29,7 +30,6 @@ import logging
 import logging.config
 from selenium import webdriver as wd
 import selenium
-import numpy as np
 from schema import SCHEMA
 import json
 import urllib
@@ -379,7 +379,7 @@ def get_browser():
     if args.headless:
         chrome_options.add_argument('--headless')
     chrome_options.add_argument('log-level=3')
-    browser = wd.Chrome(chrome_options=chrome_options)
+    browser = wd.Chrome(options=chrome_options)
     return browser
 
 

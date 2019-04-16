@@ -4,3 +4,5 @@ debug.log
 design.txt
 *.csv
 *.json
+.ipynb_checkpoints/
+
